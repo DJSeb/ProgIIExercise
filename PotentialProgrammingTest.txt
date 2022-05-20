@@ -1,0 +1,53 @@
+Vstup: 2 èísla (první horní mez, druhé délka pole)
+Vıstup: Kolik takovıchto polí existuje
+                                                                                  
+Podmínka: èíslo na pozici i je:
+    * a[i-1] - 1
+    * a[i-1] 
+    * a[i-1] + 1
+    
+5 5 => 259
+        
+===
+
+Vstup: èíslo (hodnota, kterou chceme dostat) + pole hodnot mincí
+Vıstup: Kolik nejménì jich musíme pouít
+                                                                                  
+Idea: BFS + pole (pro dynamiku) velikosti (daná èástka - min(mince)) => na pozici [i]=(kolika tahama se nejménì dostaneme)(if [i]=None: add else nepokraèuj ve vìtvi)
+
+===
+
+Faktoriál velkıch èísel bez pouití big integer
+
+===
+
+Jsou dána dvì data ve tvaru den mìsíc rok, tzn. kadé datum je zadáno jako trojice celıch èísel. Všech šest èísel je na standardním vstupu uvedeno na jednom øádku, èísla jsou od sebe oddìlena mezerami. Obì zadaná data jsou z období platnosti našeho souèasného Gregoriánského kalendáøe, tedy od 15.10.1582 dále (maximálnì do konce roku 2500). Obì data jsou zadána korektnì, první z nich je starší ne druhé. Program urèí, kolik dní uplynulo nebo uplyne mezi obìma daty. Vısledkem vypsanım na standardní vıstup bude jedno celé èíslo - odpovídající poèet dní.
+
+Jednotlivé mìsíce v roce mají po øadì 31, 28 (nebo 29), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 dní. V Gregoriánském kalendáøi je pøestupnı kadı rok, jeho èíslo je násobkem 4, s vıjimkou celıch století, která pøestupná nejsou. Roky, jejich letopoèet je dìlitelnı 400, ovšem pøestupné jsou, aèkoliv to jsou celá století. Tedy napøíklad roky 1900 a 2100 nejsou pøestupné, zatímco rok 2000 pøestupnı byl.
+
+Upozornìní:
+Není povoleno získat vısledek tak, e byste celé zkoumané období procházeli po jednotlivıch dnech. V ReCodExu sice za takové øešení mùete získat plnı poèet bodù, ale takto získané body vám budou dodateènì odeèteny.
+
+Pøíklad 1:
+
+Vstup:
+
+1 1 2007 3 1 2007
+
+Odpovídající vıstup:
+
+  2
+
+Pøíklad 2:
+
+Vstup:
+
+  2 2 2000 2 2 2001
+
+Odpovídající vıstup:
+
+  366
+
+===
+
+Zápoèáky ze zimáku
